@@ -14,4 +14,4 @@
 
   $ heroku open
   
-Done!  
+Done! [Demo](https://salty-spire-99865.herokuapp.com/)  
