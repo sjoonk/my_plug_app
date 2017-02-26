@@ -1,24 +1,17 @@
 # MyPlugApp
 
-**TODO: Add description**
+## Deploying to Heroku
 
-## Installation
+1. Create a Heroku app with [this buildpack](https://github.com/HashNuke/heroku-buildpack-elixir):
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+  $ heroku create --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
 
-  1. Add `my_plug_app` to your list of dependencies in `mix.exs`:
+2. Push app to Heroku master repo:
 
-    ```elixir
-    def deps do
-      [{:my_plug_app, "~> 0.1.0"}]
-    end
-    ```
+  $ git push heroku master
 
-  2. Ensure `my_plug_app` is started before your application:
+3. Open in a browser:
 
-    ```elixir
-    def application do
-      [applications: [:my_plug_app]]
-    end
-    ```
-
+  $ heroku open
+  
+Done!  
