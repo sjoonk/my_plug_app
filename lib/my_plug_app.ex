@@ -23,7 +23,7 @@ defmodule MyPlugApp do
   end
   
   defp get_port do
-    System.get_env("PORT") #|| "4000"
+    (System.get_env("PORT") || "4000")
     |> String.to_integer
   end
   
