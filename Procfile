@@ -1,1 +1,1 @@
-web: PORT=$PORT mix run --no-halt
+web: PORT=80 mix run --no-halt
