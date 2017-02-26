@@ -19,7 +19,12 @@ defmodule MyPlugApp do
   end
   
   def start(_type, _args) do
-    Plug.Adapters.Cowboy.http(__MODULE__, [])
+    Plug.Adapters.Cowboy.http(__MODULE__, [], port: get_port)
+  end
+  
+  defp get_port do
+    System.get_env("PORT") || "4000"
+    |> String.to_integer
   end
   
 end
